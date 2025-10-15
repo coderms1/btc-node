@@ -1,0 +1,14 @@
+[Unit]
+Description=Sparrow Wallet (GUI)
+After=network.target graphical.target
+ConditionPathExists=/run/media/zim/random/Sparrow/bin/Sparrow
+
+[Service]
+Type=simple
+ExecStart=/run/media/zim/random/Sparrow/bin/Sparrow
+WorkingDirectory=/run/media/zim/random/Sparrow
+Restart=on-abort
+User=zim
+
+[Install]
+WantedBy=graphical.target

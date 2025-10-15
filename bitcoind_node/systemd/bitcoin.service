@@ -1,0 +1,14 @@
+[Unit]
+Description=Bitcoin Core Node
+After=network.target
+ConditionPathIsMountPoint=/run/media/zim/random
+
+[Service]
+ExecStart=/usr/bin/bitcoind -conf=/run/media/zim/random/.bitcoin/bitcoin.conf
+ExecStop=/usr/bin/bitcoin-cli stop
+Restart=on-failure
+User=zim
+TimeoutStopSec=30s
+
+[Install]
+WantedBy=multi-user.target
