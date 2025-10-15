@@ -15,8 +15,8 @@ bitcoind --version
 bitcoin-cli --version
 
 # Set up data directory (external drive example)
-mkdir -p /run/media/zim/random/.bitcoin
-cd /run/media/zim/random/.bitcoin
+mkdir -p /run/media/user/disk/.bitcoin
+cd /run/media/user/disk/.bitcoin
 
 # Create configuration file
 nano bitcoin.conf
@@ -31,7 +31,7 @@ nano bitcoin.conf
 # rpcallowip=127.0.0.1
 
 # Start the node manually
-bitcoind -daemon -conf=/run/media/zim/random/.bitcoin/bitcoin.conf
+bitcoind -daemon -conf=/run/media/user/disk/.bitcoin/bitcoin.conf
 
 # Monitor progress
 bitcoin-cli getblockchaininfo | grep verificationprogress
