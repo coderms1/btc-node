@@ -26,3 +26,5 @@ This repository documents the complete setup of a full Bitcoin Core node configu
 bash scripts/verify_status.sh
 bash scripts/sync_progress.sh
 sudo systemctl status bitcoind
+
+# ~ MS1 🌛
