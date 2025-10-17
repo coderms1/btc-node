@@ -1,0 +1,32 @@
+# Node data & wallet files
+.bitcoin/
+wallet.dat
+*.dat
+blocks/
+chainstate/
+indexes/
+debug.log
+
+# Local system files
+.env
+*.pid
+*.sock
+*.lock
+
+# VS Code & logs
+.vscode/
+*.log
+
+# Node Sync Logs & Local Data
+sync_log.txt
+*.log
+*.tmp
+*.bak
+
+# Ignore Python cache folders
+__pycache__/
+*.pyc
+
+# Ignore OS junk
+.DS_Store
+Thumbs.db
