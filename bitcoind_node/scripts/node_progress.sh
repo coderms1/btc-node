@@ -15,6 +15,7 @@ TARGET_BLOCK=880000
 GREEN="\033[1;32m"
 YELLOW="\033[1;33m"
 CYAN="\033[1;36m"
+ORANGE="\033[1;91m"
 RESET="\033[0m"
 
 # ---=== Header ===---
@@ -92,6 +93,6 @@ echo -e "${GREEN}📈 Verification Progress:${RESET} $VERIFICATION"
 echo -e "${GREEN}🌐 Connections:${RESET}           $CONNECTIONS peers"
 echo -e "${YELLOW}⚡ Blocks Since Last Check:${RESET} $BLOCK_DIFF"
 echo -e "${YELLOW}📊 Avg Blocks/Hour:${RESET}       $AVG_BLOCKS_PER_HOUR"
-echo -e "${YELLOW}🕒 Hours Left (est):${RESET}      $HOURS_LEFT"
-echo -e "${YELLOW}📅 Days Left (est):${RESET}       $DAYS_LEFT"
+echo -e "${ORANGE}🕒 Hours Left (est):${RESET}      $HOURS_LEFT"
+echo -e "${ORANGE}📅 Days Left (est):${RESET}       $DAYS_LEFT"
 echo "============================================================"
