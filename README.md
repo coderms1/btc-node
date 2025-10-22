@@ -57,4 +57,20 @@ sudo systemctl stop bitcoind && sudo umount /run/media/user/disk
 ```
 ---
 
+#### 🛰️ Future Plans & Goals
+
+This node is just the start.  
+The goal is to expand from a single full Bitcoin Core node into a small network of independently run nodes; 
+each monitored, optimized, and synced across different systems and environments, running harmoniously with one another!
+
+• Next steps include: 
+```
+- Automating backups and remote monitoring  
+- Running additional nodes (TAO, Lightning, or archival)  
+- Testing resource performance and uptime stability  
+- Integrating data from multiple nodes into one dashboard  
+```
+**🫡 The mission: build a reliable, self-sustaining node network that’s fully transparent, well-documented, and easy to replicate.**
+
+
 ~ *MS1* 🌛
