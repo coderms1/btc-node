@@ -34,8 +34,8 @@ tail -f ~/.bitcoin/debug.log        →  View live logs
 ```
 ./scripts/node_progress.sh                →   Show current sync stats
 watch -n 600 ./scripts/node_progress.sh   →   Auto-refresh every 10 min
-Displays:
 
+• Displays:
 - Block height, verification %, peer count
 - Blocks/hour (rolling avg), ETA hours/days
 - Visual progress bar (█ = synced)
