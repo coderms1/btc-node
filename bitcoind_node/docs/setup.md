@@ -29,16 +29,10 @@ Your node will now auto-start on boot and sync from scratch.
 ```bash
 sudo systemctl restart bitcoind
 Check logs
-bash
-Copy code
 journalctl -u bitcoind.service -f
 Verify sync
-bash
-Copy code
 bitcoin-cli getblockchaininfo | grep verificationprogress
 Stop node safely
-bash
-Copy code
 bitcoin-cli stop
 ```
 
