@@ -1,14 +1,15 @@
 [Unit]
-Description=Bitcoin Core Node
-After=network.target
-ConditionPathIsMountPoint=/run/media/zim/random
+Description=Bitcoin daemon
+After=network-online.target
+Wants=network-online.target
 
 [Service]
-ExecStart=/usr/bin/bitcoind -conf=/run/media/zim/random/.bitcoin/bitcoin.conf
-ExecStop=/usr/bin/bitcoin-cli stop
-Restart=on-failure
-User=zim
-TimeoutStopSec=30s
+ExecStart=/usr/local/bin/bitcoind -daemon -conf=/home/$USER/.bitcoin/bitcoin.conf
+ExecStop=/usr/local/bin/bitcoin-cli stop
+Restart=always
+RestartSec=10
+TimeoutStopSec=120
+User=$USER
 
 [Install]
 WantedBy=multi-user.target
