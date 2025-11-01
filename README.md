@@ -6,7 +6,7 @@
 - OS: Fedora Linux 41
 - Node: Bitcoin Core (bitcoind)
 - Wallet Interface: Sparrow Wallet
-- External Drive: `/run/media/user/disk`
+- Bitcoin Data Path: `/run/home/$USER/.bitcoin`
 
 ---
 
@@ -42,8 +42,8 @@ watch -n 600 ./scripts/node_progress.sh   →   Auto-refresh every 10 min
 ```
 #### 🔐 Wallet (Sparrow)
 ```
-sudo systemctl start sparrow.service        →    Auto-start via systemd
-/run/media/user/disk/Sparrow/bin/Sparrow    →    Manual launch
+sudo systemctl start sparrow.service   →    Auto-start via systemd
+/run/home/$USER/Sparrow/bin/Sparrow    →    Manual launch
 Connects locally to your Bitcoin Core node at 127.0.0.1:8332.
 ```
 #### 🧰 CLI & Maintenance
@@ -53,7 +53,7 @@ bitcoin-cli getconnectioncount
 sudo systemctl restart bitcoind
 df -h | grep bitcoin
 htop
-sudo systemctl stop bitcoind && sudo umount /run/media/user/disk
+sudo systemctl stop bitcoind
 ```
 ---
 
