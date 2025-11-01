@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ===========================================
-# Bitcoin Node Setup Commands Log
+# Node Setup Commands
 # ===========================================
 
 # Update system and install essentials
@@ -15,23 +15,23 @@ bitcoind --version
 bitcoin-cli --version
 
 # Set up data directory (external drive example)
-mkdir -p /run/media/zim/random/.bitcoin
-cd /run/media/zim/random/.bitcoin
+mkdir -p /run/home/$USER/.bitcoin
+cd /run/home/$USER/.bitcoin
 
 # Create configuration file
-nano bitcoin.conf
+vi bitcoin.conf
 
 # Example configuration (see configs/bitcoin.conf.example)
-# datadir=/run/media/zim/random/.bitcoin
-# server=1
-# daemon=1
-# txindex=1
-# rpcuser=zimnode
-# rpcpassword=<REDACTED>
-# rpcallowip=127.0.0.1
+datadir=/home/$USER/.bitcoin
+server=1
+daemon=1
+txindex=1
+rpcuser=********
+rpcpassword=*******
+rpcallowip=127.0.0.1
 
 # Start the node manually
-bitcoind -daemon -conf=/run/media/zim/random/.bitcoin/bitcoin.conf
+bitcoind -daemon -conf=/home/$USER/.bitcoin/bitcoin.conf
 
 # Monitor progress
 bitcoin-cli getblockchaininfo | grep verificationprogress
