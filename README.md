@@ -35,7 +35,7 @@ tail -f ~/.bitcoin/debug.log        →  View live logs
 ./scripts/node_progress.sh                →   Show current sync stats
 watch -n 600 ./scripts/node_progress.sh   →   Auto-refresh every 10 min
 
-• Displays:
+# Displays the following:
 - Block height, verification %, peer count
 - Blocks/hour (rolling avg), ETA hours/days
 - Visual progress bar (█ = synced)
@@ -44,7 +44,7 @@ watch -n 600 ./scripts/node_progress.sh   →   Auto-refresh every 10 min
 ```
 sudo systemctl start sparrow.service   →    Auto-start via systemd
 /run/home/$USER/Sparrow/bin/Sparrow    →    Manual launch
-Connects locally to your Bitcoin Core node at 127.0.0.1:8332.
+# Connects locally to your Bitcoin Core node at 127.0.0.1:8332.
 ```
 #### 🧰 CLI & Maintenance
 ```
