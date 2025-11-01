@@ -6,10 +6,11 @@ ConditionPathExists=/run/home/$USER/Sparrow/bin/Sparrow
 [Service]
 Type=simple
 ExecStart=/run/home/$USER/Sparrow/bin/Sparrow
-WorkingDirectory=/run//home/$USER/Sparrow
+WorkingDirectory=/run/home/$USER/Sparrow
 Restart=on-abort
 User=zim
 
 [Install]
 WantedBy=graphical.target
+
 
