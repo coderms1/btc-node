@@ -1,6 +1,6 @@
 #!/bin/bash
 # =================================================================
-#  Bitcoin Node ~ Progress Tracker (v3.0)
+#  Node ~ Progress Tracker (v3.0)
 #  Tracks current block height, verifies progress, connections,
 #  averages blocks/hour, & estimates hours & days remaining.
 # =================================================================
