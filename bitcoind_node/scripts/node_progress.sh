@@ -9,7 +9,7 @@
 DATA_FILE="$HOME/.bitcoin/node_progress_data.txt"
 HISTORY_FILE="$HOME/.bitcoin/node_progress_history.txt"
 MAX_SAMPLES=5
-TARGET_BLOCK=880000
+TARGET_BLOCK=$(bitcoin-cli getblockchaininfo | grep -o '"headers":[^,]*' | cut -d: -f2)
 
 # ---=== Colors ===---
 GREEN="\033[1;32m"
